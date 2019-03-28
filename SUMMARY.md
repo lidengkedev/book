@@ -16,6 +16,7 @@
     * [ES8](doc/javascript/es8/README.md)
     * [ES9](doc/javascript/es9/README.md)
     * [SEO](doc/javascript/seo/README.md)
+    * [知识汇总](doc/javascript/summary/README.md)
 * [Vue](doc/vue/README.md)
     * [Vue-SSR](doc/vue/vue-ssr.md)
 * [Vue-router](doc/vuerouter/README.md)
