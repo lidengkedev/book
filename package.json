@@ -1,0 +1,62 @@
+{
+  "name": "book",
+  "version": "0.0.1",
+  "description": "this is a book.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "gitbook-plugin-chapter-fold": "^0.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lidengkedev/book.git"
+  },
+  "keywords": [
+    "book",
+    "gitbook",
+    "css",
+    "css3",
+    "html",
+    "html5",
+    "git",
+    "svn",
+    "svg",
+    "node",
+    "vue",
+    "vue-router",
+    "vuex",
+    "axios",
+    "nuxt",
+    "js",
+    "javascript",
+    "es5",
+    "es6",
+    "es7",
+    "es8",
+    "es9",
+    "es10",
+    "angular",
+    "react",
+    "linux",
+    "jenkins",
+    "java",
+    "php",
+    "ajax",
+    "flex",
+    "seo",
+    "ssr",
+    "canvas"
+  ],
+  "author": "lidengke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lidengkedev/book/issues"
+  },
+  "homepage": "https://github.com/lidengkedev/book#readme"
+}

@@ -1,0 +1,18 @@
+{
+    "title": "Gitbook 个人学习文档",
+    "description": "Gitbook 个人学习文档",
+    "plugins": [ "chapter-fold" ],
+    "styles": {
+        "website": ""
+    },
+    "pluginsConfig": {},
+    "author": "lidengke",
+    "language": "zh-hans",
+    "links": {
+        "sidebar": {
+            "Home": "https://lidengkedev.github.io/book/"
+        }
+    },
+    "root": "./",
+    "gitbook": ">=3.0.0"
+}
