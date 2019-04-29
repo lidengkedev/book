@@ -5,6 +5,7 @@
     * [Canvas](doc/html/canvas.md)
     * [svg](doc/html/svg.md)
     * [HTML5](doc/html/html5.md)
+    * [字符集](doc/html/character.md)
 * [CSS](doc/css/README.md)
     * [Flex](doc/css/flex.md)
     * [px/em/rem](doc/css/px-em-rem.md)
@@ -17,6 +18,7 @@
     * [ES9](doc/javascript/es9/README.md)
     * [SEO](doc/javascript/seo/README.md)
     * [知识汇总](doc/javascript/summary/README.md)
+    * [算法](doc/javascript/algorithm/README.md)
 * [Vue](doc/vue/README.md)
     * [Vue-SSR](doc/vue/vue-ssr.md)
 * [Vue-router](doc/vuerouter/README.md)
@@ -27,4 +29,6 @@
 * [Node](doc/node/README.md)
 * [GitBook](doc/book/README.md)
 * [Linux](doc/linux/README.md)
+* [Git](doc/git/README.md)
+* [Babel](doc/babel/README.md)
 
