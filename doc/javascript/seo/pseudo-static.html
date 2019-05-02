@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>WebSocket · Gitbook 个人学习文档</title>
+        <title>伪静态 · Gitbook 个人学习文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -51,10 +51,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="array.html" />
+    <link rel="next" href="../summary/" />
     
     
-    <link rel="prev" href="date.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -248,9 +248,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="./">
+        <li class="chapter " data-level="1.4.2" data-path="../es5/">
             
-                <a href="./">
+                <a href="../es5/">
             
                     
                     ES5
@@ -262,9 +262,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.2.1" data-path="window.html">
+        <li class="chapter " data-level="1.4.2.1" data-path="../es5/window.html">
             
-                <a href="window.html">
+                <a href="../es5/window.html">
             
                     
                     Window
@@ -275,9 +275,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2.2" data-path="date.html">
+        <li class="chapter " data-level="1.4.2.2" data-path="../es5/date.html">
             
-                <a href="date.html">
+                <a href="../es5/date.html">
             
                     
                     Date
@@ -288,9 +288,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2.3" data-path="websocket.html">
+        <li class="chapter " data-level="1.4.2.3" data-path="../es5/websocket.html">
             
-                <a href="websocket.html">
+                <a href="../es5/websocket.html">
             
                     
                     WebSocket
@@ -301,9 +301,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2.4" data-path="array.html">
+        <li class="chapter " data-level="1.4.2.4" data-path="../es5/array.html">
             
-                <a href="array.html">
+                <a href="../es5/array.html">
             
                     
                     Array
@@ -314,9 +314,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2.5" data-path="string.html">
+        <li class="chapter " data-level="1.4.2.5" data-path="../es5/string.html">
             
-                <a href="string.html">
+                <a href="../es5/string.html">
             
                     
                     String
@@ -403,9 +403,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.7" data-path="../seo/">
+        <li class="chapter " data-level="1.4.7" data-path="./">
             
-                <a href="../seo/">
+                <a href="./">
             
                     
                     SEO
@@ -417,9 +417,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.7.1" data-path="../seo/pseudo-static.html">
+        <li class="chapter active" data-level="1.4.7.1" data-path="pseudo-static.html">
             
-                <a href="../seo/pseudo-static.html">
+                <a href="pseudo-static.html">
             
                     
                     伪静态
@@ -671,7 +671,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >WebSocket</a>
+        <a href="../../.." >伪静态</a>
     </h1>
 </div>
 
@@ -686,122 +686,40 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="websocket">WebSocket</h1>
-<p>WebSocket &#x662F;&#x4E00;&#x79CD;&#x7F51;&#x7EDC;&#x901A;&#x4FE1;&#x534F;&#x8BAE;&#x3002;RFC6455 &#x5B9A;&#x4E49;&#x4E86;&#x5B83;&#x7684;&#x901A;&#x4FE1;&#x6807;&#x51C6;&#x3002;
-WebSocket &#x662F; HTML5 &#x5F00;&#x59CB;&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x79CD;&#x5728;&#x5355;&#x4E2A; TCP &#x8FDE;&#x63A5;&#x4E0A;&#x8FDB;&#x884C;&#x5168;&#x53CC;&#x5DE5;&#x901A;&#x8BAF;&#x7684;&#x534F;&#x8BAE;&#x3002;</p>
-<p>HTTP &#x534F;&#x8BAE;&#x662F;&#x4E00;&#x79CD;&#x65E0;&#x72B6;&#x6001;&#x7684;&#x3001;&#x65E0;&#x8FDE;&#x63A5;&#x7684;&#x3001;&#x5355;&#x5411;&#x7684;&#x5E94;&#x7528;&#x5C42;&#x534F;&#x8BAE;&#x3002;&#x5B83;&#x91C7;&#x7528;&#x4E86;&#x8BF7;&#x6C42;/&#x54CD;&#x5E94;&#x6A21;&#x578B;&#x3002;&#x901A;&#x4FE1;&#x8BF7;&#x6C42;&#x53EA;&#x80FD;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x5BF9;&#x8BF7;&#x6C42;&#x505A;&#x51FA;&#x5E94;&#x7B54;&#x5904;&#x7406;&#x3002;
-&#x8FD9;&#x79CD;&#x901A;&#x4FE1;&#x6A21;&#x578B;&#x6709;&#x4E00;&#x4E2A;&#x5F0A;&#x7AEF;&#xFF1A;HTTP &#x534F;&#x8BAE;&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;&#x670D;&#x52A1;&#x5668;&#x4E3B;&#x52A8;&#x5411;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;&#x6D88;&#x606F;&#x3002;</p>
-<p>WebSocket &#x8FDE;&#x63A5;&#x5141;&#x8BB8;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x5168;&#x53CC;&#x5DE5;&#x901A;&#x4FE1;&#xFF0C;&#x4EE5;&#x4FBF;&#x4EFB;&#x4E00;&#x65B9;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5EFA;&#x7ACB;&#x7684;&#x8FDE;&#x63A5;&#x5C06;&#x6570;&#x636E;&#x63A8;&#x9001;&#x5230;&#x53E6;&#x4E00;&#x7AEF;&#x3002;WebSocket &#x53EA;&#x9700;&#x8981;&#x5EFA;&#x7ACB;&#x4E00;&#x6B21;&#x8FDE;&#x63A5;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4E00;&#x76F4;&#x4FDD;&#x6301;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#x3002;</p>
-<p>Web&#x6D4F;&#x89C8;&#x5668;&#x548C;&#x670D;&#x52A1;&#x5668;&#x90FD;&#x5FC5;&#x987B;&#x5B9E;&#x73B0; WebSockets &#x534F;&#x8BAE;&#x6765;&#x5EFA;&#x7ACB;&#x548C;&#x7EF4;&#x62A4;&#x8FDE;&#x63A5;&#x3002;&#x7531;&#x4E8E; WebSockets &#x8FDE;&#x63A5;&#x957F;&#x671F;&#x5B58;&#x5728;&#xFF0C;&#x4E0E;&#x5178;&#x578B;&#x7684;HTTP&#x8FDE;&#x63A5;&#x4E0D;&#x540C;&#xFF0C;&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x6709;&#x91CD;&#x8981;&#x7684;&#x5F71;&#x54CD;&#x3002;
-&#x57FA;&#x4E8E;&#x591A;&#x7EBF;&#x7A0B;&#x6216;&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x670D;&#x52A1;&#x5668;&#x65E0;&#x6CD5;&#x9002;&#x7528;&#x4E8E; WebSockets&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x65E8;&#x5728;&#x6253;&#x5F00;&#x8FDE;&#x63A5;&#xFF0C;&#x5C3D;&#x53EF;&#x80FD;&#x5FEB;&#x5730;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#xFF0C;&#x7136;&#x540E;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;&#x4EFB;&#x4F55;&#x5B9E;&#x9645;&#x7684; WebSockets &#x670D;&#x52A1;&#x5668;&#x7AEF;&#x5B9E;&#x73B0;&#x90FD;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
-<p>var Socket = new WebSocket(url, [protocol] );
-&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570; url, &#x6307;&#x5B9A;&#x8FDE;&#x63A5;&#x7684; URL&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570; protocol &#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x6307;&#x5B9A;&#x4E86;&#x53EF;&#x63A5;&#x53D7;&#x7684;&#x5B50;&#x534F;&#x8BAE;&#x3002;</p>
+                                <h1 id="&#x4F2A;&#x9759;&#x6001;">&#x4F2A;&#x9759;&#x6001;</h1>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;&#x4F2A;&#x9759;&#x6001;&#xFF1F;">&#x4EC0;&#x4E48;&#x662F;&#x4F2A;&#x9759;&#x6001;&#xFF1F;</h2>
+<p>&#x4F2A;&#x9759;&#x6001;&#x5C31;&#x662F;&#x7F51;&#x7AD9;&#x672C;&#x8EAB;&#x662F;&#x52A8;&#x6001;&#x7F51;&#x9875;&#xFF0C;&#x8F6C;&#x6362;&#x6210;&#x7C7B;&#x4F3C;&#x4E8E;&#x9759;&#x6001;&#x7684;&#x7F51;&#x9875;&#x3002;&#x5982;.php&#x3001;.asp&#x3001;.aspx&#x7B49;&#x683C;&#x5F0F;&#x52A8;&#x6001;&#x7F51;&#x9875;&#x6709;&#x65F6;&#x8FD9;&#x7C7B;&#x52A8;&#x6001;&#x7F51;&#x9875;&#x5730;&#x5740;&#x540E;&#x8DDF;&#x201C;?&#x201D;&#x52A0;&#x53C2;&#x6570;&#x6765;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x5185;&#x4E0D;&#x540C;&#x8D44;&#x6599;&#x3002;</p>
 <blockquote>
-<p>WebSocket &#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;</p>
+<p>&#x4F2A;&#x9759;&#x6001;&#x4F5C;&#x7528;</p>
 </blockquote>
-<table>
-    <thead>
-        <tr>
-            <th>&#x5C5E;&#x6027;</th>
-            <th>&#x63CF;&#x8FF0;</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>readyState</td>
-            <td>&#x53EA;&#x8BFB;&#x5C5E;&#x6027; readyState &#x8868;&#x793A;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x4EE5;&#x4E0B;&#x503C;&#xFF1A;0 - &#x8868;&#x793A;&#x8FDE;&#x63A5;&#x5C1A;&#x672A;&#x5EFA;&#x7ACB;&#x3002;1 - &#x8868;&#x793A;&#x8FDE;&#x63A5;&#x5DF2;&#x5EFA;&#x7ACB;&#xFF0C;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x3002;2 - &#x8868;&#x793A;&#x8FDE;&#x63A5;&#x6B63;&#x5728;&#x8FDB;&#x884C;&#x5173;&#x95ED;&#x3002;3 - &#x8868;&#x793A;&#x8FDE;&#x63A5;&#x5DF2;&#x7ECF;&#x5173;&#x95ED;&#x6216;&#x8005;&#x8FDE;&#x63A5;&#x4E0D;&#x80FD;&#x6253;&#x5F00;&#x3002;</td>
-        </tr>
-        <tr>
-            <td>bufferedAmount</td>
-            <td>&#x53EA;&#x8BFB;&#x5C5E;&#x6027; bufferedAmount &#x5DF2;&#x88AB; send() &#x653E;&#x5165;&#x6B63;&#x5728;&#x961F;&#x5217;&#x4E2D;&#x7B49;&#x5F85;&#x4F20;&#x8F93;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x6CA1;&#x6709;&#x53D1;&#x51FA;&#x7684; UTF-8 &#x6587;&#x672C;&#x5B57;&#x8282;&#x6570;&#x3002;</td>
-        </tr>
-    </tbody>
-</table>
-
+<p>&#x5F88;&#x5178;&#x578B;&#x7684;&#x6848;&#x4F8B;&#x5373;&#x662F;discuz&#x8BBA;&#x575B;&#x7CFB;&#x7EDF;&#xFF0C;&#x540E;&#x53F0;&#x5C31;&#x6709;&#x4E00;&#x4E2A;&#x8BBE;&#x7F6E;&#x4F2A;&#x9759;&#x6001;&#x529F;&#x80FD;&#xFF0C;&#x5F00;&#x542F;&#x4F2A;&#x9759;&#x6001;&#x540E;&#xFF0C;&#x52A8;&#x6001;&#x7F51;&#x9875;&#x5373;&#x88AB;&#x8F6C;&#x6362;&#x91CD;&#x5199;&#x6210;&#x9759;&#x6001;&#x7F51;&#x9875;&#x7C7B;&#x578B;&#x9875;&#x9762;&#xFF0C;&#x901A;&#x8FC7;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;&#x5730;&#x5740;&#x548C;&#x771F;&#x7684;&#x9759;&#x6001;&#x9875;&#x9762;&#x6CA1;&#x533A;&#x522B;&#x3002;</p>
+<p>&#x524D;&#x63D0;&#x670D;&#x52A1;&#x5668;&#x652F;&#x6301;&#x4F2A;&#x9759;&#x6001;&#x91CD;&#x5199;URL Rewrite&#x529F;&#x80FD;&#x3002;</p>
 <blockquote>
-<p>WebSocket &#x5BF9;&#x8C61;&#x7684;&#x76F8;&#x5173;&#x4E8B;&#x4EF6;</p>
+<p>&#x9700;&#x8981;&#x4F2A;&#x9759;&#x6001;&#x529F;&#x80FD;&#x5730;&#x65B9;</p>
 </blockquote>
-<table>
-    <thead>
-        <tr>
-            <th>&#x4E8B;&#x4EF6;</th>
-            <th>&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;</th>
-            <th>&#x63CF;&#x8FF0;</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>open</td>
-            <td>Socket.onopen</td>
-            <td>&#x8FDE;&#x63A5;&#x5EFA;&#x7ACB;&#x65F6;&#x89E6;&#x53D1;</td>
-        </tr>
-        <tr>
-            <td>message</td>
-            <td>Socket.onmessage</td>
-            <td>&#x5BA2;&#x6237;&#x7AEF;&#x63A5;&#x6536;&#x670D;&#x52A1;&#x7AEF;&#x6570;&#x636E;&#x65F6;&#x89E6;&#x53D1;</td>
-        </tr>
-        <tr>
-            <td>error</td>
-            <td>Socket.onerror</td>
-            <td>&#x901A;&#x4FE1;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x65F6;&#x89E6;&#x53D1;</td>
-        </tr>
-        <tr>
-            <td>close</td>
-            <td>Socket.onclose</td>
-            <td>&#x8FDE;&#x63A5;&#x5173;&#x95ED;&#x65F6;&#x89E6;&#x53D1;</td>
-        </tr>
-    </tbody>
-</table>
-
-<blockquote>
-<p>WebSocket &#x5BF9;&#x8C61;&#x7684;&#x76F8;&#x5173;&#x65B9;&#x6CD5;</p>
-</blockquote>
-<table>
-    <thead>
-        <tr>
-            <th>&#x65B9;&#x6CD5;</th>
-            <th>&#x63CF;&#x8FF0;</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Socket.send()</td>
-            <td>&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x53D1;&#x9001;&#x6570;&#x636E;</td>
-        </tr>
-        <tr>
-            <td>Socket.close()</td>
-            <td>&#x5173;&#x95ED;&#x8FDE;&#x63A5;</td>
-        </tr>
-    </tbody>
-</table>
-
-<blockquote>
-<p>&#x5B9E;&#x4F8B;</p>
-</blockquote>
-<pre><code class="lang-javascript"><span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A; WebSocket &#x5BF9;&#x8C61;</span>
-<span class="hljs-keyword">var</span> ws = <span class="hljs-keyword">new</span> WebSocket(<span class="hljs-string">&quot;ws://localhost:9998/echo&quot;</span>);
-
-<span class="hljs-comment">// &#x5EFA;&#x7ACB; web socket &#x8FDE;&#x63A5;&#x6210;&#x529F;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;</span>
-ws.onopen = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-
-    <span class="hljs-comment">// &#x4F7F;&#x7528; send() &#x65B9;&#x6CD5;&#x53D1;&#x9001;&#x6570;&#x636E;</span>
-    ws.send(<span class="hljs-string">&quot;&#x53D1;&#x9001;&#x6570;&#x636E;&quot;</span>);
-    alert(<span class="hljs-string">&quot;&#x6570;&#x636E;&#x53D1;&#x9001;&#x4E2D;...&quot;</span>);
-};
-
-<span class="hljs-comment">// &#x63A5;&#x6536;&#x670D;&#x52A1;&#x7AEF;&#x6570;&#x636E;&#x65F6;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6; </span>
-ws.onmessage = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">evt</span>) </span>{
-
-    <span class="hljs-keyword">var</span> received_msg = evt.data; alert(<span class="hljs-string">&quot;&#x6570;&#x636E;&#x5DF2;&#x63A5;&#x6536;...&quot;</span>);
-
-};
-<span class="hljs-comment">// &#x65AD;&#x5F00; web socket &#x8FDE;&#x63A5;&#x6210;&#x529F;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;</span>
-ws.onclose = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-
-    alert(<span class="hljs-string">&quot;&#x8FDE;&#x63A5;&#x5DF2;&#x5173;&#x95ED;...&quot;</span>);
-
-};
-</code></pre>
+<p>&#x8003;&#x8651;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x4F18;&#x5316;SEO&#xFF0C;&#x5C06;&#x52A8;&#x6001;&#x7F51;&#x9875;&#x901A;&#x8FC7;&#x670D;&#x52A1;&#x5668;&#x5904;&#x7406;&#x6210;&#x9759;&#x6001;&#x9875;&#x9762;&#xFF0C;&#x5982;www.xxx.com/jk/fd.php?=12&#x8FD9;&#x6837;&#x7684;&#x52A8;&#x6001;&#x7F51;&#x9875;&#x5904;&#x7406;&#x6210;www.xxx.com/jk-fd-12.html&#x8FD9;&#x6837;&#x683C;&#x5F0F;&#x9759;&#x6001;&#x9875;&#x9762;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x8BBA;&#x575B;&#x5E16;&#x5B50;&#x9875;&#x9762;&#xFF0C;&#x90FD;&#x662F;&#x7ECF;&#x8FC7;&#x4F2A;&#x9759;&#x6001;&#x5904;&#x7406;&#x6210;&#x9759;&#x6001;&#x9875;&#x9762;&#x683C;&#x5F0F;html&#x9875;&#x9762;&#x3002;</p>
+<p>&#x8003;&#x8651;&#x7F51;&#x7AD9;&#x6240;&#x7528;&#x7684;&#x7A0B;&#x5E8F;&#x8BED;&#x8A00;&#x4E0D;&#x6613;&#x88AB;&#x53D1;&#x73B0;&#xFF0C;&#x7ECF;&#x8FC7;&#x91CD;&#x5199;&#x6765;&#x4F2A;&#x9759;&#x6001;&#x6765;&#x5C06;&#x52A8;&#x6001;&#x7F51;&#x9875;&#x7684;&#x7A0B;&#x5E8F;&#x540E;&#x7F00;&#x53D8;&#x4E3A;html&#x7684;&#x9759;&#x6001;&#x9875;&#x9762;&#x683C;&#x5F0F;&#x3002;</p>
+<h2 id="&#x4F2A;&#x9759;&#x6001;&#x7684;&#x5229;&#x4E0E;&#x5F0A;">&#x4F2A;&#x9759;&#x6001;&#x7684;&#x5229;&#x4E0E;&#x5F0A;</h2>
+<p>&#x5F53;&#x7136;&#x72B9;&#x5982;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x7684;&#x4F5C;&#x8005;&#x6240;&#x8BF4;&#x7684;&#xFF1A;&quot;&#x5982;&#x679C;&#x6D41;&#x91CF;&#x7A0D;&#x5927;&#x4E00;&#x4E9B;&#x4F7F;&#x7528;&#x4F2A;&#x9759;&#x6001;&#x5C31;&#x51FA;&#x73B0;CPU&#x4F7F;&#x7528;&#x8D85;&#x8D1F;&#x8377;&#xFF0C;&#x6211;&#x7684;&#x540C;&#x65F6;&#x5728;&#x7EBF;300&#x591A;&#x4EBA;&#x5C31;&#x6302;&#x4E86;&#xFF0C;&#x800C;&#x4E0D;&#x4F7F;&#x7528;&#x4F2A;&#x9759;&#x6001;&#x7684;&#x65F6;&#x5019;&#x540C;&#x65F6;&#x5728;&#x7EBF;&#x8D85;500&#x4EBA;&#x90FD;&#x4E0D;&#x6302;&#xFF0C;&#x6211;&#x7684;IIS&#x6570;&#x662F;1000&#x3002;&#x201D;</p>
+<p>&#x786E;&#x5B9E;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF0C;&#x7531;&#x4E8E;&#x4F2A;&#x9759;&#x6001;&#x662F;&#x7528;&#x6B63;&#x5219;&#x5224;&#x65AD;&#x800C;&#x4E0D;&#x662F;&#x771F;&#x5B9E;&#x5730;&#x5740;&#xFF0C;&#x5206;&#x8FA8;&#x5230;&#x5E95;&#x663E;&#x793A;&#x54EA;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x8D23;&#x4EFB;&#x4E5F;&#x7531;&#x76F4;&#x63A5;&#x6307;&#x5B9A;&#x8F6C;&#x7531;CPU&#x6765;&#x5224;&#x65AD;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;CPU&#x5360;&#x6709;&#x91CF;&#x7684;&#x4E0A;&#x5347;&#xFF0C;&#x786E;&#x5B9E;&#x662F;&#x4F2A;&#x9759;&#x6001;&#x6700;&#x5927;&#x7684;&#x5F0A;&#x75C5;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x9009;&#x62E9;&#x4F2A;&#x9759;&#x6001;&#x8FD8;&#x662F;&#x771F;&#x9759;&#x6001;&#xFF1F;</p>
+<ol>
+<li>&#x4F7F;&#x7528;&#x771F;&#x9759;&#x6001;&#x548C;&#x5047;&#x9759;&#x6001;&#x5BF9;SEO&#x6765;&#x8BF4;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;</li>
+<li>&#x4F7F;&#x7528;&#x771F;&#x9759;&#x6001;&#x53EF;&#x80FD;&#x5C06;&#x5BFC;&#x81F4;&#x786C;&#x76D8;&#x635F;&#x574F;&#x5E76;&#x5C06;&#x5F71;&#x54CD;&#x8BBA;&#x575B;&#x6027;&#x80FD;</li>
+<li>&#x4F7F;&#x7528;&#x4F2A;&#x9759;&#x6001;&#x5C06;&#x5360;&#x7528;&#x4E00;&#x5B9A;&#x91CF;&#x7684;CPU&#x5360;&#x6709;&#x7387;&#xFF0C;&#x5927;&#x91CF;&#x4F7F;&#x7528;&#x5C06;&#x5BFC;&#x81F4;CPU&#x8D85;&#x8D1F;&#x8377;</li>
+<li>&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x9759;&#x6001;&#x662F;&#x4E3A;&#x4E86;SEO</li>
+</ol>
+<p>&#x6240;&#x4EE5;</p>
+<ol>
+<li>&#x4F7F;&#x7528;&#x771F;&#x9759;&#x6001;&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6392;&#x9664;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x65E0;&#x8BBA;&#x600E;&#x4E48;&#x751F;&#x6210;&#xFF0C;&#x5BF9;&#x786C;&#x76D8;&#x6765;&#x8BF4;&#x90FD;&#x662F;&#x5F88;&#x4F24;&#x7684;&#x3002;</li>
+<li>&#x65E2;&#x7136;&#x771F;&#x4F2A;&#x9759;&#x6001;&#x7684;&#x6548;&#x679C;&#x4E00;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4F2A;&#x9759;&#x6001;&#x4E86;&#x3002;</li>
+<li>&#x4F46;&#x662F;&#x4F2A;&#x9759;&#x6001;&#x5927;&#x91CF;&#x4F7F;&#x7528;&#x4F1A;&#x9020;&#x6210;CPU&#x8D85;&#x8D1F;&#x8377;&#x3002;</li>
+<li>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EA;&#x8981;&#x4E0D;&#x5927;&#x91CF;&#x4F7F;&#x7528;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</li>
+<li>&#x65E2;&#x7136;&#x9759;&#x6001;&#x53EA;&#x662F;&#x7ED9;SEO&#x770B;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x4F2A;&#x9759;&#x6001;&#x7ED9;SEO&#x5C31;&#x884C;&#x4E86;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x7ED9;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x3002;</li>
+<li>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EA;&#x8981;&#x5728;&#x4E13;&#x95E8;&#x63D0;&#x4F9B;&#x7ED9;SEO&#x722C;&#x7684;Archiver&#x4E2D;&#x4F7F;&#x7528;&#x4F2A;&#x9759;&#x6001;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</li>
+</ol>
+<p>&#x771F;&#x6B63;&#x7684;&#x9759;&#x6001;&#x5316;&#x548C;&#x4F2A;&#x9759;&#x6001;&#x8FD8;&#x662F;&#x6709;&#x672C;&#x8D28;&#x7684;&#x533A;&#x522B;&#x7684;&#x3002;</p>
+<p>&#x4E3A;&#x6D4F;&#x89C8;&#x7528;&#x6237;&#x5904;&#x7406;&#x4E00;&#x4E2A;&#x7EAF;&#x7CB9;htm&#x548C;&#x4E00;&#x4E2A;&#x8C03;&#x7528;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x7684;php&#x5728;CPU&#x7684;&#x4F7F;&#x7528;&#x7387;&#x65B9;&#x9762;&#x660E;&#x663E;&#x524D;&#x8005;&#x5C11;&#x3002;</p>
 
                                 
                                 </section>
@@ -829,12 +747,12 @@ ws.onclose = <span class="hljs-function"><span class="hljs-keyword">function</sp
 
             
                 
-                <a href="date.html" class="navigation navigation-prev " aria-label="Previous page: Date">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: SEO">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="array.html" class="navigation navigation-next " aria-label="Next page: Array">
+                <a href="../summary/" class="navigation navigation-next " aria-label="Next page: 知识汇总">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -845,7 +763,7 @@ ws.onclose = <span class="hljs-function"><span class="hljs-keyword">function</sp
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WebSocket","level":"1.4.2.3","depth":3,"next":{"title":"Array","level":"1.4.2.4","depth":3,"path":"doc/javascript/es5/array.md","ref":"doc/javascript/es5/array.md","articles":[]},"previous":{"title":"Date","level":"1.4.2.2","depth":3,"path":"doc/javascript/es5/date.md","ref":"doc/javascript/es5/date.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold"],"root":"./","styles":{"website":""},"pluginsConfig":{"chapter-fold":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"lidengke","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook 个人学习文档","language":"zh-hans","links":{"sidebar":{"Home":"https://lidengkedev.github.io/book/"}},"gitbook":">=3.0.0","description":"Gitbook 个人学习文档"},"file":{"path":"doc/javascript/es5/websocket.md","mtime":"2019-04-29T12:21:33.692Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-02T01:19:35.177Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"伪静态","level":"1.4.7.1","depth":3,"next":{"title":"知识汇总","level":"1.4.8","depth":2,"path":"doc/javascript/summary/README.md","ref":"doc/javascript/summary/README.md","articles":[]},"previous":{"title":"SEO","level":"1.4.7","depth":2,"path":"doc/javascript/seo/README.md","ref":"doc/javascript/seo/README.md","articles":[{"title":"伪静态","level":"1.4.7.1","depth":3,"path":"doc/javascript/seo/pseudo-static.md","ref":"doc/javascript/seo/pseudo-static.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["chapter-fold"],"root":"./","styles":{"website":""},"pluginsConfig":{"chapter-fold":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"lidengke","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook 个人学习文档","language":"zh-hans","links":{"sidebar":{"Home":"https://lidengkedev.github.io/book/"}},"gitbook":">=3.0.0","description":"Gitbook 个人学习文档"},"file":{"path":"doc/javascript/seo/pseudo-static.md","mtime":"2019-04-29T12:38:54.010Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-02T01:19:35.177Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

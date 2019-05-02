@@ -23,6 +23,7 @@
     * [ES8](doc/javascript/es8/README.md)
     * [ES9](doc/javascript/es9/README.md)
     * [SEO](doc/javascript/seo/README.md)
+        * [伪静态](doc/javascript/seo/pseudo-static.md)
     * [知识汇总](doc/javascript/summary/README.md)
     * [算法](doc/javascript/algorithm/README.md)
     * [小例子](doc/javascript/example/README.md)
