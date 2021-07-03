@@ -18,3 +18,5 @@ _book
 .vscode
 .project
 .idea
+.temp
+.cache

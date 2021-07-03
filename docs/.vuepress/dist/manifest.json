@@ -1,0 +1,25 @@
+{
+    "name": "XXX",
+    "short_name": "XXX",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#2196f3",
+    "description": "个人主页",
+    "theme_color": "blue",
+    "icons": [
+      {
+        "src": "https://vuejs.org/images/logo.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }
+    ],
+    "related_applications": [
+      {
+        "platform": "web"
+      },
+      {
+        "platform": "play",
+        "url": ""
+      }
+    ]
+  }
